@@ -4,7 +4,6 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  border: 0;
 }
 
 html {
@@ -47,6 +46,52 @@ body {
 #corpo .section-1 p {
   font-size: 1.2rem;
   line-height: 150%;
+}
+#corpo .section-2 {
+  padding: 2.5rem 1.8rem;
+  text-align: center;
+  border-bottom: 1px solid #26782D;
+}
+#corpo .section-2 form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+#corpo .section-2 form label, #corpo .section-2 form input {
+  width: 100%;
+}
+#corpo .section-2 form input {
+  padding: 1rem;
+  border: 1px solid #26782D;
+}
+#corpo .section-2 form .submit {
+  background-color: #9AF9A2;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #26782D;
+}
+#corpo .footer {
+  text-align: center;
+  padding: 2rem 1.8rem;
+}
+#corpo .footer a {
+  color: #000;
+}
+#corpo .footer p:first-child {
+  font-size: 1.2rem;
+  color: #000;
+  padding-bottom: 2rem;
+}
+#corpo .footer p:last-child {
+  font-size: 0.8rem;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=index.css.map */
