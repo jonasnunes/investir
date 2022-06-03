@@ -21,6 +21,11 @@ body {
   width: 375px;
   height: 100vh;
 }
+@media (min-width: 376px) {
+  #corpo {
+    width: 100%;
+  }
+}
 #corpo header {
   position: fixed;
   width: 375px;
@@ -30,6 +35,11 @@ body {
   padding: 1.4rem;
   box-shadow: 2px 4px 6px #3FC74B;
 }
+@media (min-width: 376px) {
+  #corpo header {
+    width: 100vw;
+  }
+}
 #corpo header h2 {
   letter-spacing: 0.2rem;
 }
@@ -37,6 +47,12 @@ body {
   padding: 6rem 1.8rem 2rem;
   text-align: center;
   border-bottom: 1px solid #26782D;
+}
+@media (min-width: 376px) {
+  #corpo .section-1 {
+    width: 80%;
+    margin: auto;
+  }
 }
 #corpo .section-1 h1 {
   font-size: 2.2rem;
@@ -51,6 +67,12 @@ body {
   padding: 2.5rem 1.8rem;
   text-align: center;
   border-bottom: 1px solid #26782D;
+}
+@media (min-width: 376px) {
+  #corpo .section-2 {
+    width: 80%;
+    margin: auto;
+  }
 }
 #corpo .section-2 form {
   padding: 2rem;
@@ -80,6 +102,12 @@ body {
 #corpo .footer {
   text-align: center;
   padding: 2rem 1.8rem;
+}
+@media (min-width: 376px) {
+  #corpo .footer {
+    width: 80%;
+    margin: auto;
+  }
 }
 #corpo .footer a {
   color: #000;

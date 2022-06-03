@@ -1,3 +1,5 @@
+@use 'mixins'
+    
 *
     margin: 0
     padding: 0
@@ -17,6 +19,8 @@ body
 #corpo
     width: 375px
     height: 100vh
+    @include mixins.responsivo 
+        width: 100%
 
     header
         position: fixed
@@ -26,6 +30,8 @@ body
         background-color: #9AF9A2
         padding: 1.4rem
         box-shadow: 2px 4px 6px #3FC74B
+        @include mixins.responsivo
+            width: 100vw
 
         h2
             letter-spacing: .2rem
@@ -34,6 +40,9 @@ body
         padding: 6rem 1.8rem 2rem
         text-align: center
         border-bottom: 1px solid #26782D
+        @include mixins.responsivo
+            width: 80%
+            margin: auto
 
         h1
             font-size: 2.2rem
@@ -48,6 +57,9 @@ body
         padding: 2.5rem 1.8rem
         text-align: center
         border-bottom: 1px solid #26782D
+        @include mixins.responsivo
+            width: 80%
+            margin: auto
 
         form
             padding: 2rem
@@ -77,6 +89,9 @@ body
     .footer
         text-align: center
         padding: 2rem 1.8rem
+        @include mixins.responsivo
+            width: 80%
+            margin: auto
 
         a
             color: #000
