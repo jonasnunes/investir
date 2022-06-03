@@ -10,4 +10,4 @@
         $total += $juros;
     }
 
-    $resultado = "<p style='color: #26782D;'>Em $meses meses, você irá poupar R$ ".number_format($total, 3) . "</p>";
+    $resultado = "<p style='color: #26782D;'>Se você guardar R$ $valor todo mês, durante $meses meses, você irá poupar R$ ".number_format($total, 3) . "</p>";
