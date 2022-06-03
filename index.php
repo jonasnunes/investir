@@ -44,7 +44,7 @@
         </section>
         <footer class="footer">
             <p>Desenvolvido por &copy; <a href="https://github.com/jonasnunes" target="_blank">Jonas Nunes</a></p>
-            <p>Obs.: O projeto é apenas um exercício para reforçar os conhecimentos. Os cálucos são baseados na taxa de 1% ao mês. Se não for essa a realidade, desconsidere.</p>
+            <p>Obs.: O projeto é apenas um exercício para reforçar os conhecimentos em desenvolvimento web. Os cálculos são baseados na taxa de 1% ao mês. Se não for essa a realidade, desconsidere.</p>
         </footer>
     </div>
 </body>
