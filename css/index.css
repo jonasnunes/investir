@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#corpo {
+  width: 375px;
+  height: 100vh;
+}
+#corpo header {
+  display: flex;
+  align-items: center;
+  background-color: #9AF9A2;
+  padding: 1.4rem;
+  box-shadow: 2px 4px 6px #3FC74B;
+}
+#corpo header h2 {
+  letter-spacing: 0.2rem;
+}
+
+/*# sourceMappingURL=index.css.map */
