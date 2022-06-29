@@ -13,21 +13,34 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#corpo {
   width: 375px;
   height: 100vh;
 }
 @media (min-width: 376px) {
-  #corpo {
+  body {
     width: 100%;
   }
 }
-#corpo header {
+
+input[type=checkbox] {
+  display: none;
+}
+
+.bi {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.bi-moon {
+  display: none;
+}
+
+header {
   position: fixed;
+  top: 0;
   width: 375px;
   display: flex;
   align-items: center;
@@ -36,59 +49,69 @@ body {
   box-shadow: 2px 4px 6px #3FC74B;
 }
 @media (min-width: 376px) {
-  #corpo header {
+  header {
     width: 100vw;
   }
 }
-#corpo header h2 {
+header .bi-currency-dollar {
+  padding-right: 0.5rem;
+  font-size: 1.5rem;
+}
+header h2 {
   letter-spacing: 0.2rem;
 }
-#corpo .section-1 {
-  padding: 6rem 1.8rem 2rem;
+header div {
+  position: absolute;
+  right: 2rem;
+}
+
+.section-1 {
+  padding: 28rem 1.8rem 2rem;
   text-align: center;
   border-bottom: 1px solid #26782D;
 }
 @media (min-width: 376px) {
-  #corpo .section-1 {
+  .section-1 {
     width: 80%;
     margin: auto;
   }
 }
-#corpo .section-1 h1 {
+.section-1 h1 {
   font-size: 2.2rem;
   line-height: 250%;
   color: #26782D;
 }
-#corpo .section-1 p {
+.section-1 p {
   font-size: 1.2rem;
   line-height: 150%;
 }
-#corpo .section-2 {
-  padding: 2.5rem 1.8rem;
+
+.section-2 {
+  padding: 2.5rem 1.2rem;
   text-align: center;
   border-bottom: 1px solid #26782D;
 }
 @media (min-width: 376px) {
-  #corpo .section-2 {
+  .section-2 {
     width: 80%;
     margin: auto;
   }
 }
-#corpo .section-2 form {
+.section-2 form {
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   text-align: left;
 }
-#corpo .section-2 form label, #corpo .section-2 form input {
+.section-2 form label, .section-2 form input {
   width: 100%;
 }
-#corpo .section-2 form input {
+.section-2 form input {
   padding: 1rem;
   border: 1px solid #26782D;
 }
-#corpo .section-2 form .submit {
+.section-2 form .submit {
   background-color: #9AF9A2;
   border-radius: 2rem;
   border: none;
@@ -99,27 +122,59 @@ body {
   letter-spacing: 0.1rem;
   color: #26782D;
 }
-#corpo .footer {
+
+.footer {
   text-align: center;
   padding: 2rem 1.8rem;
 }
 @media (min-width: 376px) {
-  #corpo .footer {
+  .footer {
     width: 80%;
     margin: auto;
   }
 }
-#corpo .footer a {
+.footer a {
   color: #000;
 }
-#corpo .footer p:first-child {
+.footer p:first-child {
   font-size: 1.2rem;
   color: #000;
   padding-bottom: 2rem;
 }
-#corpo .footer p:last-child {
+.footer p:last-child {
   font-size: 0.8rem;
   font-style: italic;
+}
+
+.dark, .dark header {
+  background-color: #263238;
+  color: #fff;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+.dark .bi-moon {
+  display: block;
+}
+
+.dark .section-1 h1 {
+  color: #fff;
+}
+
+.dark .section-2 form .submit {
+  background-color: #37474f;
+  color: #fff;
+}
+
+.dark .footer .credits,
+.dark .footer .credits a {
+  color: #fff;
+}
+
+.dark .footer .credits a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=index.css.map */

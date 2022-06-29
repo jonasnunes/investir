@@ -10,6 +10,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
+    <!-- BootStrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,38 +22,43 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <header>
+        <i class="bi bi-currency-dollar"></i>
+        <h2>Investir</h2>
+        <div>
+            <input type="checkbox" name="change-theme" id="change-theme" />
+            <label for="change-theme">
+                <i class="bi bi-sun"></i>
+                <i class="bi bi-moon"></i
+            ></label>
+        </div>
+    </header>
 
-    <div id="corpo">
-        <header>
-            <img src="images/dolar.png" width="45" alt="imagem">
-            <h2>Investir</h2>
-        </header>
+    <section class="section-1">
+        <h1>Poupança</h1>
+        <p>A <strong>Poupança</strong> é o tipo de <strong>investimento</strong> considerado mais tradicional e seguro. É o mais indicado para o investidor conservador, que não está disposto a correr riscos. Quase todos os bancos comerciais oferecem essa modalidade de <strong>investimento</strong> e não é preciso ser correntista para <strong>investir</strong>.</p>
+    </section>
 
-        <section class="section-1">
-            <h1>Poupança</h1>
-            <p>A <strong>Poupança</strong> é o tipo de <strong>investimento</strong> considerado mais tradicional e seguro. É o mais indicado para o investidor conservador, que não está disposto a correr riscos. Quase todos os bancos comerciais oferecem essa modalidade de <strong>investimento</strong> e não é preciso ser correntista para <strong>investir</strong>.</p>
-        </section>
+    <section class="section-2">
+        <h2>Simulação de Investimento</h2>
 
-        <section class="section-2">
-            <h2>Simulação de Investimento</h2>
+        <form action="index.html" method="get">
+            <label for="valor">Quantos reais deseja guardar por mês?</label>
+            <input type="text" inputmode="numeric" placeholder="R$ 1.000" min="0" id="valor" name="valor" required>
+            <label for="tempo">Em quantos anos?</label>
+            <input type="text" inputmode="numeric" placeholder="Ex.: 10 anos..." id="tempo" name="tempo">
+            <input type="button" value="Simular" class="submit" onclick="simular()">
+        </form>
 
-            <form action="index.html" method="get">
-                <label for="valor">Quantos reais deseja guardar por mês?</label>
-                <input type="text" inputmode="numeric" placeholder="R$ 1.000" min="0" id="valor" name="valor" required>
-                <label for="tempo">Em quantos anos?</label>
-                <input type="text" inputmode="numeric" placeholder="Ex.: 10 anos..." id="tempo" name="tempo">
-                <input type="button" value="Simular" class="submit" onclick="simular()">
-            </form>
+        <div id="resultado"></div>
+    </section>
 
-            <div id="resultado"></div>
-        </section>
-
-        <footer class="footer">
-            <p>Desenvolvido por &copy; <a href="https://github.com/jonasnunes" target="_blank">Jonas Nunes</a></p>
-            <p>Obs.: O projeto é apenas um exercício para reforçar os conhecimentos em desenvolvimento web. Os cálculos são baseados na taxa de 1% ao mês. Se não for essa a realidade, desconsidere.</p>
-        </footer>
-    </div>
+    <footer class="footer">
+        <p class="credits">Desenvolvido por &copy; <a href="https://github.com/jonasnunes" target="_blank">Jonas Nunes</a></p>
+        <p>Obs.: O projeto é apenas um exercício para reforçar os conhecimentos em desenvolvimento web. Os cálculos são baseados na taxa de 1% ao mês. Se não for essa a realidade, desconsidere.</p>
+    </footer>
 
     <script src="scripts/main.js"></script>
+    <script src="scripts/darkmode.js"></script>
 </body>
 </html>
