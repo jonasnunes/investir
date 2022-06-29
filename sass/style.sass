@@ -36,7 +36,7 @@ input[type="checkbox"]
 header
     position: fixed
     top: 0
-    width: 375px
+    width: 100%
 
     display: flex
     align-items: center
@@ -44,9 +44,6 @@ header
     background-color: #9AF9A2
     padding: 1.4rem
     box-shadow: 2px 4px 6px #3FC74B
-
-    @include mixins.responsivo
-        width: 100vw
 
     .bi-currency-dollar
         padding-right: .5rem
@@ -60,12 +57,12 @@ header
         right: 2rem
 
 .section-1
-    padding: 28rem 1.8rem 2rem
+    padding: 30rem 1.8rem 2rem
     text-align: center
     border-bottom: 1px solid #26782D
     @include mixins.responsivo
         width: 80%
-        margin: auto
+        margin-top: 0
 
     h1
         font-size: 2.2rem
