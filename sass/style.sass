@@ -22,6 +22,9 @@ body
     @include mixins.responsivo 
         width: 100%
 
+    @include mixins.quebra4
+        position: relative
+
 input[type="checkbox"]
     display: none
 
@@ -36,7 +39,7 @@ input[type="checkbox"]
 header
     position: fixed
     top: 0
-    width: 100%
+    width: 104vw
 
     display: flex
     align-items: center
@@ -56,6 +59,10 @@ header
         position: absolute
         right: 2rem
 
+    @include mixins.quebra4 
+        position: absolute
+        top: 0
+
 .section-1
     margin-top: 28rem
     padding: 6rem 1.8rem 2rem
@@ -63,7 +70,7 @@ header
     border-bottom: 1px solid #26782D
     @include mixins.responsivo
         width: 80%
-        margin-top: 35rem
+        margin-top: 25rem
     
     @include mixins.quebra1 
         margin-top: 28rem
@@ -72,7 +79,11 @@ header
         margin-top: 20rem
     
     @include mixins.quebra3 
-        margin-top: 35rem
+        margin-top: 1rem
+
+    @include mixins.quebra4 
+        position: absolute
+        bottom: 80px
 
     h1
         font-size: 2.2rem
@@ -90,6 +101,10 @@ header
     @include mixins.responsivo
         width: 80%
         margin: auto
+    
+    @include mixins.quebra4 
+        position: absolute
+        bottom: -350px
 
     form
         padding: 2rem
@@ -122,6 +137,10 @@ header
     @include mixins.responsivo
         width: 80%
         margin: auto
+    
+    @include mixins.quebra4 
+        position: absolute
+        bottom: -550px
 
     a
         color: #000

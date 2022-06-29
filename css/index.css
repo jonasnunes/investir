@@ -24,6 +24,11 @@ body {
     width: 100%;
   }
 }
+@media (max-height: 450px) {
+  body {
+    position: relative;
+  }
+}
 
 input[type=checkbox] {
   display: none;
@@ -41,7 +46,7 @@ input[type=checkbox] {
 header {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 104vw;
   display: flex;
   align-items: center;
   background-color: #9AF9A2;
@@ -59,6 +64,12 @@ header div {
   position: absolute;
   right: 2rem;
 }
+@media (max-height: 450px) {
+  header {
+    position: absolute;
+    top: 0;
+  }
+}
 
 .section-1 {
   margin-top: 28rem;
@@ -69,7 +80,7 @@ header div {
 @media (min-width: 376px) {
   .section-1 {
     width: 80%;
-    margin-top: 35rem;
+    margin-top: 25rem;
   }
 }
 @media (min-width: 451px) {
@@ -82,9 +93,15 @@ header div {
     margin-top: 20rem;
   }
 }
-@media (orientation: landscape) {
+@media (min-width: 768px) {
   .section-1 {
-    margin-top: 35rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-height: 450px) {
+  .section-1 {
+    position: absolute;
+    bottom: 80px;
   }
 }
 .section-1 h1 {
@@ -106,6 +123,12 @@ header div {
   .section-2 {
     width: 80%;
     margin: auto;
+  }
+}
+@media (max-height: 450px) {
+  .section-2 {
+    position: absolute;
+    bottom: -350px;
   }
 }
 .section-2 form {
@@ -142,6 +165,12 @@ header div {
   .footer {
     width: 80%;
     margin: auto;
+  }
+}
+@media (max-height: 450px) {
+  .footer {
+    position: absolute;
+    bottom: -550px;
   }
 }
 .footer a {
