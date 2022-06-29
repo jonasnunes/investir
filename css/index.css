@@ -82,6 +82,11 @@ header div {
     margin-top: 20rem;
   }
 }
+@media (orientation: landscape) {
+  .section-1 {
+    margin-top: 35rem;
+  }
+}
 .section-1 h1 {
   font-size: 2.2rem;
   line-height: 250%;
