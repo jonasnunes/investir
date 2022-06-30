@@ -18,6 +18,7 @@ body {
   align-items: center;
   width: 375px;
   height: 100vh;
+  transition: .5s;
 }
 @media (min-width: 376px) {
   body {
